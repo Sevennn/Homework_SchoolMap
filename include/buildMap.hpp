@@ -1,8 +1,10 @@
 #include <string>
 #include <vector>
-#include <iostream>
-using namespace std;
+#include "json.hpp"
 
+using json = nlohmann::json;
+using std::string;
+using std::vector;
 
 struct Vertex;
 
@@ -33,15 +35,14 @@ class Digraph {
     int digraghMatrix[20][20];
     int vertexSize;
     int edgeSize;
-    vector<vector<int> >dismap;
-    vector<vector<int> >path;
   public:
     Digraph();
     ~Digraph();
-    bool createVertex(const string& name, const string& information);
-    bool createEdge(const string& start, const string& end, const int& length);
+    bool createVertex(const int& vertexID, const string& name, const string& information);
+    bool createEdge(const int& edgeID, const string& start, const string& end, const int& length);
     Vertex* searchVertexByID(const int& ID);
     Vertex* searchVertexByName(const string& name);
+    void createMap(const json& myJson);
     void clearDigraph();
     void BuildSmallestMap();
     void FindWays(int beg, int end, vector<int> &way);

@@ -1,0 +1,35 @@
+{
+  "Vertexes": [{
+    "VertexName": "A1",
+    "VertexID": 1,
+    "VertexInfo": "info_1"
+  }, {
+    "VertexName": "B1",
+    "VertexID": 2,
+    "VertexInfo": "info_2"
+  }, {
+    "VertexName": "C1",
+    "VertexID": 3,
+    "VertexInfo": "info_1"
+  }, {
+    "VertexName": "D1",
+    "VertexID": 4,
+    "VertexInfo": "info_2"
+  }],
+  "Edges": [{
+    "EdgeID": 1,
+    "Start": "A1",
+    "End": "B1",
+    "pathLength": 3
+  }, {
+    "EdgeID": 2,
+    "Start": "A1",
+    "End": "C1",
+    "pathLength": 3
+  }, {
+    "EdgeID": 3,
+    "Start": "A1",
+    "End": "D1",
+    "pathLength": 3
+  }]
+}
