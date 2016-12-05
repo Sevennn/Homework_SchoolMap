@@ -14,7 +14,7 @@ $(BUILD_DIR)/buildMap.o: $(SRC_DIR)/buildMap.cpp $(INC_DIR)/buildMap.hpp
 	mkdir -p $(BUILD_DIR)
 	$(CC) $(FLAGS) $(INCLUDE) $< -c -o $@
 
-$(BUILD_DIR)/main.o: $(SRC_DIR)/main.cpp
+$(BUILD_DIR)/main.o: $(SRC_DIR)/main.cpp $(INC_DIR)/Path.hpp
 	mkdir -p $(BUILD_DIR)
 	$(CC) $(FLAGS) $(INCLUDE) $< -c -o $@
 
