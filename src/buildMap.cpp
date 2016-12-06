@@ -99,6 +99,15 @@ Vertex* Digraph::searchVertexByName(const string& name) {
   return nullptr;
 }
 
+void Digraph::listAllVertexes() {
+  Vertex *currentVertex = this->firstVertex;
+  while (currentVertex != nullptr) {
+    cout << "Name: " << currentVertex->siteName << endl;
+    cout << "Info: " << currentVertex->siteInformation << endl << endl;
+    currentVertex = currentVertex->nextVertex;
+  }
+}
+
 void Digraph::createMap(const json& myJson) {
   for (int i = 0; i < myJson["Vertexes"].size(); ++i) {
     createVertex(myJson["Vertexes"][i]["VertexID"], myJson["Vertexes"][i]["VertexName"], myJson["Vertexes"][i]["VertexInfo"]);
