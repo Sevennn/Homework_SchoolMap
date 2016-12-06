@@ -20,6 +20,29 @@ int main() {
   carMapRoot >> carJson;
   walkMap.createMap(walkJson);
   carMap.createMap(carJson);
-  // walkMap.listAllVertexes();
+  walkMap.BuildSmallestMap();
+  carMap.BuildSmallestMap();
+  while (true) {
+    cout << "input one of the following command: " << endl;
+    cout << "f : find vertex\ng : guidance\n a : list all vertex \n";
+    char c;
+    cin >> c;
+    switch(c) {
+      case 'a':
+        ListAll();
+        break;
+      case 'g':
+        Guidance();
+        break;
+      case 'f':
+        SearchFor();
+        break;
+      default:
+        break;
+    }
+  }
   return 0;
 }
+
+
+
