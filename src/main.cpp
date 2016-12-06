@@ -4,6 +4,14 @@
 #include "buildMap.hpp"
 #include "Path.hpp"
 
+//#define CONSOLE_VERSION   // This is for Ta
+#define SERVER_VERSION
+/*
+  json command
+  {"startpoint":1,"endpoint":10,"passpoint":[2,3,4,5,6],"by":"foot"}
+
+*/
+
 using std::string;
 using std::endl;
 using std::cin;
@@ -50,9 +58,12 @@ void Guidance() {
       string tmp(t);
       points.push_back(tmp);
     }
-    json res = temp->ManageWays(start, points, end, true);
+    json res = temp->ManageWays(start, points, end);
     Print(res, temp);
 }
+
+
+
 
 int main() {
   string walkString;
@@ -68,6 +79,7 @@ int main() {
   carMap.createMap(carJson);
   walkMap.BuildSmallestMap();
   carMap.BuildSmallestMap();
+#ifdef CONSOLE_VERSION
   while (true) {
     cout << "input one of the following command: " << endl;
     cout << "g : guidance\na : list all vertex \nq : quit\n";
@@ -85,6 +97,32 @@ int main() {
         break;
     }
   }
+#endif
+
+#ifdef SERVER_VERSION
+  while (true) {
+    string temp;
+    cin >> temp;
+
+    json tmp = json::parse(temp);
+    Digraph* t = NULL;
+
+    if (tmp["by"] == "foot")
+      t = &walkMap;
+    else
+      t = &carMap;
+    vector<string>points;
+    json passpoint_vec = tmp["passpoint"];
+    string start = t->searchVertexByID(tmp["startpoint"])->siteName;
+    string end = t->searchVertexByID(tmp["endpoint"])->siteName;
+    json::iterator it1 = passpoint_vec.begin();
+    while (it1 != passpoint_vec.end()) {
+      points.push_back(t->searchVertexByID(*it1)->siteName);
+      it1++;
+    }
+    cout << t->ManageWays(start, points, end).dump() << endl;
+  }
+#endif
   return 0;
 }
 

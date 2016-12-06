@@ -49,7 +49,7 @@ class Digraph {
     void clearDigraph();
     void BuildSmallestMap();
     void FindWays(int beg, int end, vector<int> &way);
-    json ManageWays(string start, vector<string>points, string end, bool isOnfoot);
+    json ManageWays(string start, vector<string>points, string end);
     void CreateOrder(int start, int end, vector<int> &passpoint, vector<int> des);
     void CreateWay(vector<int>p, vector<int> &way);
 };

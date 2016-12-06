@@ -171,7 +171,7 @@ void Digraph::FindWays(int beg, int end, vector<int> &way) {
 
 
 
-json Digraph::ManageWays(string start, vector<string> points, string end, bool isOnfoot) {
+json Digraph::ManageWays(string start, vector<string> points, string end) {
   BuildSmallestMap();
   vector<int>destinations;
   Vertex* s = searchVertexByName(start);
