@@ -20,5 +20,6 @@ int main() {
   carMapRoot >> carJson;
   walkMap.createMap(walkJson);
   carMap.createMap(carJson);
+  // walkMap.listAllVertexes();
   return 0;
 }

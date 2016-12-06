@@ -33,6 +33,8 @@ class Digraph {
   private:
     Vertex *firstVertex;
     int digraghMatrix[20][20];
+    vector<vector<int> >path;
+    vector<vector<int> >dismap;
     int vertexSize;
     int edgeSize;
   public:
@@ -42,6 +44,7 @@ class Digraph {
     bool createEdge(const int& edgeID, const string& start, const string& end, const int& length);
     Vertex* searchVertexByID(const int& ID);
     Vertex* searchVertexByName(const string& name);
+    void listAllVertexes();
     void createMap(const json& myJson);
     void clearDigraph();
     void BuildSmallestMap();

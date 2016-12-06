@@ -1,6 +1,9 @@
 #include "buildMap.hpp"
 #include <cstring>
 
+using std::endl;
+using std::cout;
+
 Digraph::Digraph() : firstVertex(nullptr), vertexSize(0), edgeSize(0) {
   memset(digraghMatrix, 0, sizeof(digraghMatrix));
 }
@@ -96,6 +99,15 @@ Vertex* Digraph::searchVertexByName(const string& name) {
   return nullptr;
 }
 
+void Digraph::listAllVertexes() {
+  Vertex *currentVertex = this->firstVertex;
+  while (currentVertex != nullptr) {
+    cout << "Name: " << currentVertex->siteName << endl;
+    cout << "Info: " << currentVertex->siteInformation << endl << endl;
+    currentVertex = currentVertex->nextVertex;
+  }
+}
+
 void Digraph::createMap(const json& myJson) {
   for (int i = 0; i < myJson["Vertexes"].size(); ++i) {
     createVertex(myJson["Vertexes"][i]["VertexID"], myJson["Vertexes"][i]["VertexName"], myJson["Vertexes"][i]["VertexInfo"]);
@@ -119,5 +131,114 @@ void Digraph::clearDigraph() {
     tempVertex = this->firstVertex;
     this->firstVertex = tempVertex->nextVertex;
     delete tempVertex;
+  }
+}
+
+void Digraph::BuildSmallestMap() {
+  // these vector are private
+  for (int i = 0; i < 20; i++) {
+    vector<int> p1;
+    vector<int> p2;
+    dismap.push_back(p1);
+    path.push_back(p2);
+    for (int j = 0; j < 20; j++) {
+      if (digraghMatrix[i][j] == 0)
+        dismap[i].push_back(1000);
+      else
+        dismap[i].push_back(digraghMatrix[i][j]);
+      path[i].push_back(-1);
+    }
+  }
+  for (int k = 0; k < 20; k++)
+    for (int i = 0; i < 20; i++)
+      for (int j = 0; j < 20; j++) {
+        if (dismap[i][j] > dismap[i][k]+dismap[k][j]) {
+          dismap[i][j] = dismap[i][k]+dismap[k][j];
+          path[i][j] = k;
+        }
+      }
+}
+
+
+void Digraph::FindWays(int beg, int end, vector<int> &way) {
+  if (path[beg][end] >= 0) {
+    FindWays(beg, path[beg][end], way);
+    FindWays(path[beg][end], end, way);
+  } else {
+    way.push_back(end);
+  }
+}
+
+
+
+void Digraph::ManageWays(string start, vector<string> points, string end, bool isOnfoot) {
+  BuildSmallestMap();
+  vector<int>destinations;
+  Vertex* s = searchVertexByName(start);
+  if (s == NULL) {
+    cout << start <<" : No such a start!" << endl;
+    return;
+  }
+  Vertex* e = searchVertexByName(end);
+  if (e == NULL) {
+    cout << end <<" : No such a end!" << endl;
+    return;
+  }
+  int start_, end_;
+  json result;
+  start_ = s->siteID;
+  end_ = e->siteID;
+  result["startpoint"] = start_;
+  result["endpoint"] = end_;
+  for (int i = 0; i < points.size(); i++) {
+    Vertex* temp = searchVertexByName(points[i]);
+    if (temp == NULL) {
+      cout << points[i] <<" : Is it really a right point ?" << endl;
+      return;
+    }
+    destinations.push_back(temp->siteID);
+  }
+  vector<int>passpoint;
+  passpoint.push_back(start_);
+  CreateOrder(start_, end_, passpoint, destinations);
+  vector<int>passway;
+  CreateWay(passpoint, passway);
+  json p_vec(passpoint);
+  json w_vec(passway);
+  result["passpoint"] = p_vec;
+  result["passway"] = w_vec;
+  cout << result.dump() << endl;;
+}
+
+void Digraph::CreateOrder(int start, int end, vector<int> &passpoint, vector<int> destinations) {
+  int t_start = start;
+  while (destinations.size() > 0) {
+    int small = 1000;
+    int small_index = -1;
+    vector<int>::iterator era;
+    for (auto i = destinations.begin(); i != destinations.end(); i++) {
+      if (dismap[t_start][*i] < small) {
+        small = dismap[t_start][*i];
+        small_index = *i;
+        era = i;
+      }
+    }
+    FindWays(t_start, small_index, passpoint);
+    destinations.erase(era);
+    t_start = small_index;
+  }
+  FindWays(t_start, end, passpoint);
+}
+
+
+void Digraph::CreateWay(vector<int> p, vector<int> &way) {
+  for (int i = 0; i < p.size()-1; i++) {
+    Vertex* q = searchVertexByID(p[i]);
+    Edge* t = q->firstEdge;
+    while (t) {
+      if (t->endPoint->siteID == p[i+1])
+        way.push_back(t->pathID);
+      t = t->nextEdge;
+    }
   }
 }
