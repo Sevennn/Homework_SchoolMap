@@ -1,0 +1,60 @@
+#include <iostream>
+#include <fstream>
+#include "buildMap.hpp"
+#include "Path.hpp"
+
+using std::string;
+using std::endl;
+using std::cin;
+using std::cout;
+using std::vector;
+using std::ifstream;
+Digraph walkMap;
+Digraph carMap;
+
+void Guidance() {
+  cout << "Onfoot or Take cars ? [1/0]" << endl;
+  bool isOnfoot;
+  cin >> isOnfoot;
+  if (isOnfoot) {
+    cout << "Input names of Your start point and end point. $ ";
+    string start;
+    string end;
+    cin >> start >> end;
+    cout << "Input the points that you want to travel (except for start point and end point)" << endl
+    << "[end with EOF] : " << endl;
+    vector<string>points;
+    string temp;
+    while (scanf(%s, &temp)) {
+      points.push_back(temp);
+    }
+    walkMap.ManageWays(start, points, end, true);
+  } else {
+    return;
+  }
+}
+
+int main() {
+  string walkString;
+  string carString;
+  ifstream walkMapRoot(Path::walkPath);
+  ifstream carMapRoot(Path::carPath);
+  if (!walkMapRoot.is_open() || !carMapRoot.is_open()) { return false; }
+  json walkJson;
+  json carJson;
+  walkMapRoot >> walkJson;
+  carMapRoot >> carJson;
+  walkMap.createMap(walkJson);
+  carMap.createMap(carJson);
+  walkMap.BuildSmallestMap();
+  carMap.BuildSmallestMap();
+  while (true) {
+    cout << "input one of the following command: " << endl;
+    cout << "g : guidance\na : list all vertex \n";
+    Guidance();
+  }
+  return 0;
+}
+
+
+

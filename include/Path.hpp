@@ -7,8 +7,8 @@ public:
     static const char *carPath;
 };
 
-const char *Path::walkPath = "data/walkMap.json";
-const char *Path::carPath = "data/carMap.json";
+const char *Path::walkPath = "../data/walkMap.json";
+const char *Path::carPath = "../data/carMap.json";
 
 
 #endif

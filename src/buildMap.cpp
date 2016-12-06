@@ -171,18 +171,19 @@ void Digraph::FindWays(int beg, int end, vector<int> &way) {
 
 
 
-void Digraph::ManageWays(string start, vector<string> points, string end, bool isOnfoot) {
+json Digraph::ManageWays(string start, vector<string> points, string end, bool isOnfoot) {
   BuildSmallestMap();
   vector<int>destinations;
   Vertex* s = searchVertexByName(start);
+  json error;
   if (s == NULL) {
     cout << start <<" : No such a start!" << endl;
-    return;
+    return error;
   }
   Vertex* e = searchVertexByName(end);
   if (e == NULL) {
     cout << end <<" : No such a end!" << endl;
-    return;
+    return error;
   }
   int start_, end_;
   json result;
@@ -194,7 +195,7 @@ void Digraph::ManageWays(string start, vector<string> points, string end, bool i
     Vertex* temp = searchVertexByName(points[i]);
     if (temp == NULL) {
       cout << points[i] <<" : Is it really a right point ?" << endl;
-      return;
+      return error;
     }
     destinations.push_back(temp->siteID);
   }
@@ -207,7 +208,7 @@ void Digraph::ManageWays(string start, vector<string> points, string end, bool i
   json w_vec(passway);
   result["passpoint"] = p_vec;
   result["passway"] = w_vec;
-  cout << result.dump() << endl;;
+  return result;
 }
 
 void Digraph::CreateOrder(int start, int end, vector<int> &passpoint, vector<int> destinations) {
