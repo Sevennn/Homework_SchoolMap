@@ -1,35 +1,43 @@
 {
-  "Vertexes": [{
-    "VertexName": "A1",
-    "VertexID": 1,
-    "VertexInfo": "info_1"
-  }, {
-    "VertexName": "B1",
-    "VertexID": 2,
-    "VertexInfo": "info_2"
-  }, {
-    "VertexName": "C1",
-    "VertexID": 3,
-    "VertexInfo": "info_1"
-  }, {
-    "VertexName": "D1",
-    "VertexID": 4,
-    "VertexInfo": "info_2"
-  }],
-  "Edges": [{
-    "EdgeID": 1,
-    "Start": "A1",
-    "End": "B1",
-    "pathLength": 3
-  }, {
-    "EdgeID": 2,
-    "Start": "A1",
-    "End": "C1",
-    "pathLength": 3
-  }, {
-    "EdgeID": 3,
-    "Start": "A1",
-    "End": "D1",
-    "pathLength": 3
-  }]
+  "Vertexes":[{"VertexName":"北门牌坊", "VertexID":0, "VertexInfo": "中山大学地标"},
+              {"VertexName":"公共教学楼", "VertexID":1, "VertexInfo": "中山大学教学楼"},
+              {"VertexName":"行政会议中心", "VertexID":2, "VertexInfo": "中山大学行政会议中心"},
+              {"VertexName":"图书馆", "VertexID":3, "VertexInfo": "中山大学图书馆"},
+              {"VertexName":"北望山", "VertexID":4, "VertexInfo": "中山大学附近北望山"},
+              {"VertexName":"落雁台", "VertexID":5, "VertexInfo": "中山大学附近落雁台"},
+              {"VertexName":"月影坡", "VertexID":6, "VertexInfo": "中山大学附近月影坡"},
+              {"VertexName":"活动服务中心", "VertexID":7, "VertexInfo": "中山大学明德园活动服务中心"},
+              {"VertexName":"工学院小广场", "VertexID":8, "VertexInfo": "中山大学工学院小广场"},
+              {"VertexName":"格致园", "VertexID":9, "VertexInfo": "中山大学生活区格致园"},
+              {"VertexName":"慎思园", "VertexID":10, "VertexInfo": "中山大学生活区慎思园"},
+              {"VertexName":"中心花坛", "VertexID":11, "VertexInfo": "中山大学生活区中心花坛"},
+              {"VertexName":"冕山", "VertexID":12, "VertexInfo": "中山大学生活区附近冕山"},
+              {"VertexName":"体育馆", "VertexID":13, "VertexInfo": "中山大学体育馆"}],
+  "Edges":[{"EdgeID":0 , "Start": "北门牌坊", "End": "行政会议中心", "pathLength":220 },
+           {"EdgeID":1 , "Start": "北门牌坊", "End": "图书馆", "pathLength":250 },
+           {"EdgeID":2 , "Start": "北门牌坊", "End": "公共教学楼", "pathLength":120 },
+           {"EdgeID":3 , "Start": "公共教学楼", "End": "图书馆", "pathLength":70 },
+           {"EdgeID":4 , "Start": "公共教学楼", "End": "冕山", "pathLength":380 },
+           {"EdgeID":5 , "Start": "图书馆", "End": "体育馆", "pathLength":230 },
+           {"EdgeID":6 , "Start": "图书馆", "End": "行政会议中心", "pathLength":50 },
+           {"EdgeID":7 , "Start": "行政会议中心", "End": "北望山", "pathLength":200 },
+           {"EdgeID":8 , "Start": "体育馆", "End": "行政会议中心", "pathLength":120 },
+           {"EdgeID":9 , "Start": "体育馆", "End": "北望山", "pathLength":320 },
+           {"EdgeID":10 , "Start": "体育馆", "End": "落雁台", "pathLength":340 },
+           {"EdgeID":11 , "Start": "体育馆", "End": "月影坡", "pathLength":330 },
+           {"EdgeID":12 , "Start": "月影坡", "End": "落雁台", "pathLength":450 },
+           {"EdgeID":13 , "Start": "落雁台", "End": "北望山", "pathLength":400 },
+           {"EdgeID":14 , "Start": "北望山", "End": "工学院小广场", "pathLength":800 },
+           {"EdgeID":15 , "Start": "工学院小广场", "End": "格致园", "pathLength":400 },
+           {"EdgeID":16 , "Start": "工学院小广场", "End": "月影坡", "pathLength":430 },
+           {"EdgeID":17 , "Start": "工学院小广场", "End": "活动服务中心", "pathLength":410 },
+           {"EdgeID":18 , "Start": "活动服务中心", "End": "格致园", "pathLength":30 },
+           {"EdgeID":19 , "Start": "活动服务中心", "End": "冕山", "pathLength":40 },
+           {"EdgeID":20 , "Start": "活动服务中心", "End": "体育馆", "pathLength":250 },
+           {"EdgeID":21 , "Start": "体育馆", "End": "冕山", "pathLength":270 },
+           {"EdgeID":22 , "Start": "冕山", "End": "中心花坛", "pathLength":80 },
+           {"EdgeID":23 , "Start": "冕山", "End": "慎思园", "pathLength":60 },
+           {"EdgeID":24 , "Start": "慎思园", "End": "格致园", "pathLength":40 },
+           {"EdgeID":25 , "Start": "慎思园", "End": "中心花坛", "pathLength":10 }
+         ]
 }
