@@ -33,6 +33,8 @@ class Digraph {
   private:
     Vertex *firstVertex;
     int digraghMatrix[20][20];
+    vector<vector<int> >path;
+    vector<vector<int> >dismap;
     int vertexSize;
     int edgeSize;
   public:
