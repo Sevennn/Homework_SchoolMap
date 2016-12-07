@@ -1,132 +1,132 @@
 {
-    "Vertexes": [
+    "Vertexes":[
         {
-            "VertexName": "北门牌坊", 
-            "VertexID": 0, 
-            "VertexInfo": "中山大学地标",
+            "VertexName":"北门牌坊",
+            "VertexID":0,
+            "VertexInfo":"中山大学地标",
             "coordinate": {
               "longitude":113.391652,
               "latitude":23.071031
             }
-        }, 
+        },
         {
-            "VertexName": "公共教学楼", 
-            "VertexID": 1, 
-            "VertexInfo": "中山大学教学楼",
+            "VertexName":"公共教学楼",
+            "VertexID":1,
+            "VertexInfo":"中山大学教学楼",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.392403,
+              "latitude":23.067601
             }
-        }, 
+        },
         {
-            "VertexName": "行政会议中心", 
-            "VertexID": 2, 
-            "VertexInfo": "中山大学行政会议中心",
+            "VertexName":"行政会议中心",
+            "VertexID":2,
+            "VertexInfo":"中山大学行政会议中心",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.391234,
+              "latitude":23.068736
             }
-        }, 
+        },
         {
-            "VertexName": "图书馆", 
-            "VertexID": 3, 
-            "VertexInfo": "中山大学图书馆",
+            "VertexName":"图书馆",
+            "VertexID":3,
+            "VertexInfo":"中山大学图书馆",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.391899,
+              "latitude":23.066199
             }
-        }, 
+        },
         {
-            "VertexName": "北望山", 
-            "VertexID": 4, 
-            "VertexInfo": "中山大学附近北望山",
+            "VertexName":"北望山",
+            "VertexID":4,
+            "VertexInfo":"中山大学附近北望山",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.389876,
+              "latitude":23.069684
             }
-        }, 
+        },
         {
-            "VertexName": "落雁台", 
-            "VertexID": 5, 
-            "VertexInfo": "中山大学附近落雁台",
+            "VertexName":"落雁台",
+            "VertexID":5,
+            "VertexInfo":"中山大学附近落雁台",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.387597,
+              "latitude":23.066841
             }
-        }, 
+        },
         {
-            "VertexName": "月影坡", 
-            "VertexID": 6, 
-            "VertexInfo": "中山大学附近月影坡",
+            "VertexName":"月影坡",
+            "VertexID":6,
+            "VertexInfo":"中山大学附近月影坡",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.389694,
+              "latitude":23.061446
             }
-        }, 
+        },
         {
-            "VertexName": "活动服务中心", 
-            "VertexID": 7, 
-            "VertexInfo": "中山大学明德园活动服务中心",
+            "VertexName":"活动服务中心",
+            "VertexID":7,
+            "VertexInfo":"中山大学明德园活动服务中心",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.389233,
+              "latitude":23.061964
             }
-        }, 
+        },
         {
-            "VertexName": "工学院小广场", 
-            "VertexID": 8, 
-            "VertexInfo": "中山大学工学院小广场",
+            "VertexName":"工学院小广场",
+            "VertexID":8,
+            "VertexInfo":"中山大学工学院小广场",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.386374,
+              "latitude":23.064314
             }
-        }, 
+        },
         {
-            "VertexName": "格致园", 
-            "VertexID": 9, 
-            "VertexInfo": "中山大学生活区格致园",
+            "VertexName":"格致园",
+            "VertexID":9,
+            "VertexInfo":"中山大学生活区格致园",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.388986,
+              "latitude":23.060997
             }
-        }, 
+        },
         {
-            "VertexName": "慎思园", 
-            "VertexID": 10, 
-            "VertexInfo": "中山大学生活区慎思园",
+            "VertexName":"慎思园",
+            "VertexID":10,
+            "VertexInfo":"中山大学生活区慎思园",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.390574,
+              "latitude":23.058346
             }
-        }, 
+        },
         {
-            "VertexName": "中心花坛", 
-            "VertexID": 11, 
-            "VertexInfo": "中山大学生活区中心花坛",
+            "VertexName":"中心花坛",
+            "VertexID":11,
+            "VertexInfo":"中山大学生活区中心花坛",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.391234,
+              "latitude":23.059028
             }
-        }, 
+        },
         {
-            "VertexName": "冕山", 
-            "VertexID": 12, 
-            "VertexInfo": "中山大学生活区附近冕山",
+            "VertexName":"冕山",
+            "VertexID":12,
+            "VertexInfo":"中山大学生活区附近冕山",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.386889,
+              "latitude":23.062897
             }
-        }, 
+        },
         {
-            "VertexName": "体育馆", 
-            "VertexID": 13, 
-            "VertexInfo": "中山大学体育馆",
+            "VertexName":"体育馆",
+            "VertexID":13,
+            "VertexInfo":"中山大学体育馆",
             "coordinate": {
-              "longitude":113.391652,
-              "latitude":23.071031
+              "longitude":113.39214,
+              "latitude":23.064822
             }
         }
-    ], 
+    ],
     "Edges": [
         {
             "EdgeID": 0, 

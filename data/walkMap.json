@@ -1,5 +1,5 @@
 {
-    "Vertexs":[
+    "Vertexes":[
         {
             "VertexName":"北门牌坊",
             "VertexID":0,
@@ -129,169 +129,169 @@
     ],
     "Edges":[
         {
-            "EdgesID":0,
+            "EdgeID":0,
             "Start":"北门牌坊",
             "End":"公共教学楼",
             "pathLength":120
         },
         {
-            "EdgesID":1,
+            "EdgeID":1,
             "Start":"北门牌坊",
             "End":"行政会议中心",
             "pathLength":220
         },
         {
-            "EdgesID":2,
+            "EdgeID":2,
             "Start":"北门牌坊",
             "End":"图书馆",
             "pathLength":70
         },
         {
-            "EdgesID":3,
+            "EdgeID":3,
             "Start":"行政会议中心",
             "End":"公共教学楼",
             "pathLength":100
         },
         {
-            "EdgesID":4,
+            "EdgeID":4,
             "Start":"行政会议中心",
             "End":"图书馆",
             "pathLength":50
         },
         {
-            "EdgesID":5,
+            "EdgeID":5,
             "Start":"行政会议中心",
             "End":"北望山",
             "pathLength":70
         },
         {
-            "EdgesID":6,
+            "EdgeID":6,
             "Start":"公共教学楼",
             "End":"图书馆",
             "pathLength":70
         },
         {
-            "EdgesID":7,
+            "EdgeID":7,
             "Start":"图书馆",
             "End":"体育馆",
             "pathLength":150
         },
         {
-            "EdgesID":8,
+            "EdgeID":8,
             "Start":"图书馆",
             "End":"北望山",
             "pathLength":110
         },
         {
-            "EdgesID":9,
+            "EdgeID":9,
             "Start":"图书馆",
             "End":"落雁台",
             "pathLength":140
         },
         {
-            "EdgesID":10,
+            "EdgeID":10,
             "Start":"图书馆",
             "End":"月影坡",
             "pathLength":170
         },
         {
-            "EdgesID":11,
+            "EdgeID":11,
             "Start":"体育馆",
             "End":"月影坡",
             "pathLength":400
         },
         {
-            "EdgesID":12,
+            "EdgeID":12,
             "Start":"体育馆",
             "End":"活动服务中心",
             "pathLength":150
         },
         {
-            "EdgesID":13,
+            "EdgeID":13,
             "Start":"活动服务中心",
             "End":"冕山",
             "pathLength":20
         },
         {
-            "EdgesID":14,
+            "EdgeID":14,
             "Start":"体育馆",
             "End":"冕山",
             "pathLength":130
         },
         {
-            "EdgesID":15,
+            "EdgeID":15,
             "Start":"公共教学楼",
             "End":"冕山",
             "pathLength":200
         },
         {
-            "EdgesID":16,
+            "EdgeID":16,
             "Start":"冕山",
             "End":"慎思园",
             "pathLength":60
         },
         {
-            "EdgesID":17,
+            "EdgeID":17,
             "Start":"冕山",
             "End":"中心花坛",
             "pathLength":80
         },
         {
-            "EdgesID":18,
+            "EdgeID":18,
             "Start":"慎思园",
             "End":"中心花坛",
             "pathLength":10
         },
         {
-            "EdgesID":19,
+            "EdgeID":19,
             "Start":"慎思园",
             "End":"格致园",
             "pathLength":30
         },
         {
-            "EdgesID":20,
+            "EdgeID":20,
             "Start":"格致园",
             "End":"工学院小广场",
             "pathLength":200
         },
         {
-            "EdgesID":21,
+            "EdgeID":21,
             "Start":"格致园",
             "End":"活动服务中心",
             "pathLength":10
         },
         {
-            "EdgesID":22,
+            "EdgeID":22,
             "Start":"活动服务中心",
             "End":"工学院小广场",
             "pathLength":130
         },
         {
-            "EdgesID":23,
+            "EdgeID":23,
             "Start":"月影坡",
             "End":"工学院小广场",
             "pathLength":70
         },
         {
-            "EdgesID":24,
+            "EdgeID":24,
             "Start":"工学院小广场",
             "End":"北望山",
             "pathLength":730
         },
         {
-            "EdgesID":25,
+            "EdgeID":25,
             "Start":"月影坡",
             "End":"活动服务中心",
             "pathLength":300
         },
         {
-            "EdgesID":26,
+            "EdgeID":26,
             "Start":"月影坡",
             "End":"落雁台",
             "pathLength":253
         },
         {
-            "EdgesID":27,
+            "EdgeID":27,
             "Start":"落雁台",
             "End":"北望山",
             "pathLength":250
