@@ -295,6 +295,12 @@
             "Start":"落雁台",
             "End":"北望山",
             "pathLength":250
+        },
+        {
+            "EdgeID": 28, 
+            "Start": "图书馆", 
+            "End": "中心花坛", 
+            "pathLength": 400
         }
     ]
 }

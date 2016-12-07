@@ -283,6 +283,12 @@
             "Start": "慎思园", 
             "End": "中心花坛", 
             "pathLength": 10
+        },
+        {
+            "EdgeID": 26, 
+            "Start": "图书馆", 
+            "End": "中心花坛", 
+            "pathLength": 500
         }
     ]
 }
