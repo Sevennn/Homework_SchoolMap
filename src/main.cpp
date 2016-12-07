@@ -4,7 +4,7 @@
 #include "buildMap.hpp"
 #include "Path.hpp"
 
-//#define CONSOLE_VERSION   // This is for Ta
+#define CONSOLE_VERSION   // This is for Ta
 #define SERVER_VERSION
 /*
   json command
