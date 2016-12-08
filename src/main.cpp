@@ -4,7 +4,7 @@
 #include "buildMap.hpp"
 #include "Path.hpp"
 
-//#define CONSOLE_VERSION   // This is for Ta
+#define CONSOLE_VERSION   // This is for Ta
 #define SERVER_VERSION
 /*
   json command
@@ -55,6 +55,7 @@ void Guidance() {
     vector<string>points;
     char* t;
     while (scanf("%s", t) != EOF) {
+      //if (t[0] == 'q') break;
       string tmp(t);
       points.push_back(tmp);
     }
