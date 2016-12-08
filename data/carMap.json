@@ -178,7 +178,7 @@
         }, 
         {
             "EdgeID": 8, 
-            "Start": "体育馆", 
+            "Start": "北门", 
             "End": "行政会议中心", 
             "pathLength": 120
         }, 
@@ -255,12 +255,6 @@
             "pathLength": 250
         }, 
         {
-            "EdgeID": 21, 
-            "Start": "体育馆", 
-            "End": "冕山", 
-            "pathLength": 270
-        }, 
-        {
             "EdgeID": 22, 
             "Start": "冕山", 
             "End": "中心花坛", 
@@ -276,31 +270,31 @@
             "EdgeID": 24, 
             "Start": "慎思园", 
             "End": "格致园", 
-            "pathLength": 40
+            "pathLength": 60
         }, 
         {
             "EdgeID": 25, 
             "Start": "慎思园", 
             "End": "中心花坛", 
-            "pathLength": 10
+            "pathLength": 30
         },
         {
             "EdgeID": 26, 
-            "Start": "图书馆", 
-            "End": "中心花坛", 
-            "pathLength": 500
-        },
+            "Start": "体育馆", 
+            "End": "北门心", 
+            "pathLength": 300
+        }, 
         {
             "EdgeID": 27, 
             "Start": "体育馆", 
             "End": "中心花坛", 
-            "pathLength": 300
+            "pathLength": 150
         },
         {
             "EdgeID": 28, 
             "Start": "公共教学楼", 
             "End": "中心花坛", 
-            "pathLength": 400
+            "pathLength": 300
         },
         {
             "EdgeID": 29, 
@@ -312,7 +306,7 @@
             "EdgeID": 30, 
             "Start": "格致园", 
             "End": "中心花坛", 
-            "pathLength": 30
+            "pathLength": 50
         },
         {
             "EdgeID": 31, 
@@ -345,12 +339,6 @@
             "pathLength": 180
         },
         {
-            "EdgeID": 36, 
-            "Start": "慎思园", 
-            "End": "图书馆", 
-            "pathLength": 200
-        },
-        {
             "EdgeID": 37, 
             "Start": "慎思园", 
             "End": "公共教学楼", 
@@ -375,12 +363,6 @@
             "pathLength": 700
         },
         {
-            "EdgeID": 41, 
-            "Start": "格致园", 
-            "End": "图书馆", 
-            "pathLength": 320
-        },
-        {
             "EdgeID": 42, 
             "Start": "格致园", 
             "End": "体育馆", 
@@ -397,6 +379,12 @@
             "Start": "格致园", 
             "End": "北门牌坊", 
             "pathLength": 550
+        },
+        {
+            "EdgeID": 45, 
+            "Start": "行政会议中心", 
+            "End": "公共教学楼", 
+            "pathLength": 40
         }
     ]
 }

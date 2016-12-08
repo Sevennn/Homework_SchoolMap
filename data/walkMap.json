@@ -222,7 +222,7 @@
             "EdgeID":15,
             "Start":"公共教学楼",
             "End":"冕山",
-            "pathLength":400
+            "pathLength":500
         },
         {
             "EdgeID":16,
