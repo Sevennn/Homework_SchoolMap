@@ -59,8 +59,8 @@
             "VertexID":6,
             "VertexInfo":"中山大学附近月影坡",
             "coordinate": {
-              "longitude":113.389694,
-              "latitude":23.061446
+              "longitude":113.386889,
+              "latitude":23.062897
             }
         },
         {
@@ -113,8 +113,8 @@
             "VertexID":12,
             "VertexInfo":"中山大学生活区附近冕山",
             "coordinate": {
-              "longitude":113.386889,
-              "latitude":23.062897
+              "longitude":113.389694,
+              "latitude":23.061446
             }
         },
         {
