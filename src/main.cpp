@@ -5,7 +5,7 @@
 #include "Path.hpp"
 
 #define CONSOLE_VERSION   // This is for Ta
-#define SERVER_VERSION
+//#define SERVER_VERSION
 /*
   json command
   {"startpoint":1,"endpoint":10,"passpoint":[2,3,4,5,6],"by":"foot"}
@@ -53,12 +53,12 @@ void Guidance() {
     cout << "Input the points that you want to travel (except for start point and end point)." << endl
     << "[End with eof] : " << endl;
     vector<string>points;
-    char* t;
-    while (scanf("%s", t) != EOF) {
-      //if (t[0] == 'q') break;
-      string tmp(t);
+
+    string tmp;
+    while (cin >> tmp) {
       points.push_back(tmp);
     }
+    cin.clear();
     json res = temp->ManageWays(start, points, end);
     Print(res, temp);
 }
