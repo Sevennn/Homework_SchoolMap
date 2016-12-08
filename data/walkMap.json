@@ -222,7 +222,7 @@
             "EdgeID":15,
             "Start":"公共教学楼",
             "End":"冕山",
-            "pathLength":200
+            "pathLength":400
         },
         {
             "EdgeID":16,
@@ -234,7 +234,7 @@
             "EdgeID":17,
             "Start":"冕山",
             "End":"中心花坛",
-            "pathLength":80
+            "pathLength":30
         },
         {
             "EdgeID":18,
@@ -301,6 +301,114 @@
             "Start": "图书馆", 
             "End": "中心花坛", 
             "pathLength": 400
+        },
+        {
+            "EdgeID": 29, 
+            "Start": "体育馆", 
+            "End": "中心花坛", 
+            "pathLength": 200
+        },
+        {
+            "EdgeID": 30, 
+            "Start": "公共教学楼", 
+            "End": "中心花坛", 
+            "pathLength": 250
+        },
+        {
+            "EdgeID": 31, 
+            "Start": "北望山", 
+            "End": "中心花坛", 
+            "pathLength": 1200
+        },
+        {
+            "EdgeID": 32, 
+            "Start": "格致园", 
+            "End": "中心花坛", 
+            "pathLength": 30
+        },
+        {
+            "EdgeID": 33, 
+            "Start": "活动服务中心", 
+            "End": "中心花坛", 
+            "pathLength": 45
+        },
+        {
+            "EdgeID": 34, 
+            "Start": "工学院小广场", 
+            "End": "中心花坛", 
+            "pathLength": 230
+        },
+        {
+            "EdgeID": 35, 
+            "Start": "慎思园", 
+            "End": "月影坡", 
+            "pathLength": 310
+        },
+        {
+            "EdgeID": 36, 
+            "Start": "慎思园", 
+            "End": "活动服务中心", 
+            "pathLength": 35
+        },
+        {
+            "EdgeID": 37, 
+            "Start": "慎思园", 
+            "End": "体育馆", 
+            "pathLength": 180
+        },
+        {
+            "EdgeID": 38, 
+            "Start": "慎思园", 
+            "End": "图书馆", 
+            "pathLength": 380
+        },
+        {
+            "EdgeID": 39, 
+            "Start": "慎思园", 
+            "End": "公共教学楼", 
+            "pathLength": 480
+        },
+        {
+            "EdgeID": 40, 
+            "Start": "慎思园", 
+            "End": "北门牌坊", 
+            "pathLength": 590
+        },
+        {
+            "EdgeID": 41, 
+            "Start": "慎思园", 
+            "End": "工学院小广场", 
+            "pathLength": 200
+        },
+        {
+            "EdgeID": 42, 
+            "Start": "慎思园", 
+            "End": "行政会议中心", 
+            "pathLength": 381
+        },
+        {
+            "EdgeID": 43, 
+            "Start": "格致园", 
+            "End": "图书馆", 
+            "pathLength": 383
+        },
+        {
+            "EdgeID": 44, 
+            "Start": "格致园", 
+            "End": "体育馆", 
+            "pathLength": 350
+        },
+        {
+            "EdgeID": 45, 
+            "Start": "格致园", 
+            "End": "公共教学楼", 
+            "pathLength": 450
+        },
+        {
+            "EdgeID": 46, 
+            "Start": "格致园", 
+            "End": "北门牌坊", 
+            "pathLength": 550
         }
     ]
 }

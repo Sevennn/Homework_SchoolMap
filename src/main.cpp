@@ -55,6 +55,7 @@ void Guidance() {
     vector<string>points;
     char* t;
     while (scanf("%s", t) != EOF) {
+      //if (t[0] == 'q') break;
       string tmp(t);
       points.push_back(tmp);
     }
