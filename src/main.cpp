@@ -53,6 +53,7 @@ void Guidance() {
     cout << "Input the points that you want to travel (except for start point and end point)." << endl
     << "[End with eof] : " << endl;
     vector<string>points;
+
     string tmp;
     while (cin >> tmp) {
       points.push_back(tmp);
