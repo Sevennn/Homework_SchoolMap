@@ -21,6 +21,15 @@ using std::ifstream;
 Digraph walkMap;
 Digraph carMap;
 
+
+void QueryPoint() {
+  cout << "Input the name of point : ";
+  string name;
+  cin >> name;
+  cout << "Info: " << endl;
+  cout << walkMap.searchVertexByName(name)->siteInformation << endl;
+}
+
 void Print(json r, Digraph* temp) {
   json passpoints = r["passpoint"];
   json passways = r["passway"];
@@ -31,6 +40,7 @@ void Print(json r, Digraph* temp) {
     cout << "Next, you should go to " << temp->searchVertexByID(*it1)->siteName << endl;
     it1++;
   }
+  cout << "End tour" << endl;
 }
 void ListAll() {
   walkMap.listAllVertexes();
@@ -83,7 +93,7 @@ int main() {
 #ifdef CONSOLE_VERSION
   while (true) {
     cout << "input one of the following command: " << endl;
-    cout << "g : guidance\na : list all vertex \nq : quit\n";
+    cout << "g : guidance\na : list all vertex \nq : quit\nf : query point\n";
     char c;
     cin >> c;
     if (c == 'q')
@@ -94,6 +104,10 @@ int main() {
         break;
       case 'a' :
         ListAll();
+        break;
+      case 'f' :
+        QueryPoint();
+        break;
       default:
         break;
     }
